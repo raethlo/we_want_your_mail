@@ -1,14 +1,11 @@
-<form>
-  <!--<div class="input-group input-group-lg">-->
-    <!--<span class="input-group-addon">@</span>-->
-    <!--<input type="text" class="form-control" placeholder="Username">-->
-  <!--</div>-->
-  <!--<button></button>-->
+<!--<div class="input-group input-group-lg">-->
+<!--<span class="input-group-addon">@</span>-->
+<!--<input type="text" class="form-control" placeholder="Username">-->
+<!--</div>-->
+<!--<button></button>-->
 
-  <%= form_for User.new, :html => {:class => 'form-horizontal users'} do |f| %>
-
-      <%= f.label :email, :class => 'control-label' %>
-      <%= f.text_field :email, :class => 'text_field' %>
-      <%= f.submit nil, :class => 'btn btn-primary' %>
-  <% end %>
-</form>
+<%= form_for User.new, :html => {:class => 'form-horizontal users'} do |f| %>
+    <%= f.label :email, :class => 'control-label' %>
+    <%= f.text_field :email, :class => 'text_field' %>
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+<% end %>

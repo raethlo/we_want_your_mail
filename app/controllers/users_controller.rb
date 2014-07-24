@@ -6,8 +6,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      #redirect_to thanks
+      redirect_to static_pages_thanks_path
     else
+
     end
   end
 
