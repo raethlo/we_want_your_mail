@@ -5,19 +5,10 @@
   <!--</div>-->
   <!--<button></button>-->
 
+  <%= form_for User.new, :html => {:class => 'form-horizontal users'} do |f| %>
 
-
-  <div class="container">
-
-    <form class="form-signin" role="form">
-      <h2 class="form-signin-heading">Please give me the email already</h2>
-
-      <div class="input-group input group-lg">
-          <input type="email" class="form-control" placeholder="Email address" required autofocus>
-          <button class="btn-primary" type="submit">Sign in</button>
-      </div>
-    </form>
-
-  </div> <!-- /container -->
-
+      <%= f.label :email, :class => 'control-label' %>
+      <%= f.text_field :email, :class => 'text_field' %>
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+  <% end %>
 </form>
